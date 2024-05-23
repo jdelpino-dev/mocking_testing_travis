@@ -7,7 +7,7 @@ describe("#rollDice", () => {
 
   test("it rolls the correct number of sides and values", () => {
     const separation = 1 / 6;
-    for (let i = 1; i <= 8; i++) {
+    for (let i = 0; i <= 5; i++) {
       Math.random = jest.fn(() => i * separation);
       expect(rollDice(6)).toBe(i + 1);
       expect(Math.random).toHaveBeenCalledTimes(1);
