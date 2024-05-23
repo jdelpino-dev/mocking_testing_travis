@@ -13,6 +13,8 @@ describe("#rollDice", () => {
       expect(Math.random).toHaveBeenCalledTimes(1);
     }
     expect(Math.random).toHaveBeenCalledWith();
+    console.log(Math.random);
+    console.log(Math.random.mock);
   });
 
   test("it calls Math.random for each roll", () => {
